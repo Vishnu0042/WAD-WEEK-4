@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #036f68; /* Green header color */
+            margin-top: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px auto;
+            width: 150px;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 70%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e4d1b9; /* Beige for headers */
+            color: #036f68;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternating rows */
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 15px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #036f68;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="reset"] {
+            background-color: #b94e4e; /* Red for reset */
+        }
+
+        td input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>COURSE REGISTRATION</h1><br/>
+
+    <form>
+        <label for="set">Select the Set:</label>
+        <select name="SET" id="set">
+            <option value="1">SET 1</option>
+            <option value="2">SET 2</option>
+            <option value="3">SET 3</option>
+            <option value="4">SET 4</option>
+        </select>
+    </form>
+
+    <form>
+        <table>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Faculty</th>
+            </tr>
+            <tr>
+                <td>24CSEN1081</td>
+                <td>Intermediate Coding-II</td>
+                <td>
+                    <input type="radio" name="1" value="1.1"> Dr. M. Bhavani<br>
+                    <input type="radio" name="1" value="1.2"> Mr. Milan Kumar Dholey<br>
+                    <input type="radio" name="1" value="1.3"> Mr. Zubair Ahmed Lone<br>
+                    <input type="radio" name="1" value="1.4"> Dr. S. Sarada Nandini
+                </td>
+            </tr>
+            <tr>
+                <td>CLAD2031</td>
+                <td>Preparation For Campus Placement-2 (Soft Skills 6A)</td>
+                <td>
+                    <input type="radio" name="2" value="2.1"> Faculty 1<br>
+                    <input type="radio" name="2" value="2.2"> Faculty 2<br>
+                    <input type="radio" name="2" value="2.3"> Faculty 3<br>
+                    <input type="radio" name="2" value="2.4"> Faculty 4
+                </td>
+            </tr>
+            <tr>
+                <td>CSEN2031</td>
+                <td>Artificial Intelligence</td>
+                <td>
+                    <input type="radio" name="3" value="3.1"> Smt. A. Sireesha<br>
+                    <input type="radio" name="3" value="3.2"> Dr. Nitalaksheswara Rao<br>
+                    <input type="radio" name="3" value="3.3"> Dr. K. Srinivasa Rao<br>
+                    <input type="radio" name="3" value="3.4"> Dr. K. Yogeswara Rao
+                </td>
+            </tr>
+            <tr>
+                <td>CSEN2071</td>
+                <td>Cryptography and Network Security</td>
+                <td>
+                    <input type="radio" name="4" value="4.1"> Dr. G. Lakshmeeswari<br>
+                    <input type="radio" name="4" value="4.2"> Prof. P. V. Lakshmi<br>
+                    <input type="radio" name="4" value="4.3"> Ms. S. Malarselvi<br>
+                    <input type="radio" name="4" value="4.4"> Sri K. Venkateswarlu
+                </td>
+            </tr>
+            <tr>
+                <td>CSEN3031</td>
+                <td>Compiler Design</td>
+                <td>
+                    <input type="radio" name="5" value="5.1"> Prof. M. Rama Narsinga Rao<br>
+                    <input type="radio" name="5" value="5.2"> Dr. PNRL Chandrasekhar<br>
+                    <input type="radio" name="5" value="5.3"> Smt. M. Vijaya<br>
+                    <input type="radio" name="5" value="5.4"> Dr. K. Prasada Rao
+                </td>
+            </tr>
+            <tr>
+                <td>CSEN3071</td>
+                <td>Web Application Development and Software Frameworks</td>
+                <td>
+                    <input type="radio" name="6" value="6.1"> Sri Ravi Kanth Satapathy<br>
+                    <input type="radio" name="6" value="6.2"> Smt. A. Sravani<br>
+                    <input type="radio" name="6" value="6.3"> Dr. P. Suresh Kumar<br>
+                    <input type="radio" name="6" value="6.4"> Smt. N. Madhuri
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" name="s" value="Accept">
+                    <input type="reset" name="c" value="Ignore">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAD WEEK 4</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 10% 90%; /* Top row and remaining space */
+            height: 100vh;
+        }
+        .row1 {
+            display: grid;
+            grid-template-columns: 16% 84%; /* Sidebar and main content */
+        }
+        .row2 {
+            display: grid;
+            grid-template-rows: 8% 92%; /* Top row and remaining content */
+        }
+        .row2-top {
+            display: grid;
+            grid-template-columns: repeat(4, 25%); /* 4 equal columns */
+        }
+        .row2-bottom {
+            display: grid;
+            grid-template-columns: 16% 84%; /* Sidebar and content */
+        }
+        .frame {
+            border: 1px solid #e4d1b9; /* Adds a border to each frame */
+            box-sizing: border-box; /* Ensures borders are included in width/height */
+        }
+        .frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes iframe default borders */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Row -->
+        <div class="row1">
+            <div class="frame"><iframe src="f1.html"></iframe></div>
+            <div class="frame"><iframe src="f2.html"></iframe></div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row2">
+            <div class="row2-top">
+                <div class="frame"><iframe src="f3.html"></iframe></div>
+                <div class="frame"><iframe src="f4.html"></iframe></div>
+                <div class="frame"><iframe src="f5.html"></iframe></div>
+                <div class="frame"><iframe src="f6.html"></iframe></div>
+            </div>
+            <div class="row2-bottom">
+                <div class="frame"><iframe src="f7.html"></iframe></div>
+                <div class="frame"><iframe src="sem2.html"></iframe></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
